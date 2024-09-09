@@ -50,6 +50,11 @@ p, li, span, a, .short-text {
     font-weight: normal;
 }
 
+/* Aplicación de negrita */
+strong {
+    font-weight: 900; /* Asegura que las etiquetas <strong> aparezcan en negrita */
+}
+
 /* Estilos generales adicionales */
 
 /* Estilo general del cuerpo */
@@ -120,10 +125,6 @@ a:hover {
     height: 500px; /* Altura consistente para todas las diapositivas */
     background-color: #316CF4; /* Fondo azul consistente con el resto de la página */
     color: white; /* Texto en blanco para contraste */
-    /* Elimina display: flex y las propiedades relacionadas */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
     position: relative; /* Mantén relative para posicionar el caption si es necesario */
 }
 
@@ -158,4 +159,16 @@ a:hover {
 
 .carousel-indicators .active {
     background-color: #003366; /* Indicador activo con color azul oscuro */
+}
+
+/* Alineación de los iconos ODS */
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.icon-ods {
+    width: 150px;
+    height: auto;
 }
