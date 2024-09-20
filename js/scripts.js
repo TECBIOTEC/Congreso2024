@@ -66,3 +66,13 @@ function updateThemeIcon(theme) {
 
 // Aplicar la imagen correcta al cargar la página
 updateLogo();
+
+// Inicialización de Tooltips
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
+// Inicialización de Popovers (si los estás utilizando)
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (popoverTriggerEl) {
+    new bootstrap.Popover(popoverTriggerEl);
+});
