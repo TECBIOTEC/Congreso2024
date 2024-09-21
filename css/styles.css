@@ -239,3 +239,63 @@ a:hover {
 [data-bs-theme="dark"] .tooltip.bs-tooltip-right .tooltip-arrow::before {
     border-right-color: #D2DD8B !important; /* Color de la flecha derecha en modo oscuro */
 }
+
+/* Estilo personalizado para el acordeón en modo claro */
+[data-bs-theme="light"] .accordion-button {
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #316CF4; /* Texto color principal */
+    border: 1px solid #316CF4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+}
+
+[data-bs-theme="light"] .accordion-button:not(.collapsed) {
+    background-color: #316CF4; /* Color principal para el botón expandido */
+    color: #fff; /* Texto blanco */
+}
+
+[data-bs-theme="light"] .accordion-body {
+    background-color: #ffffff; /* Fondo claro */
+    color: #000; /* Texto oscuro */
+    border-radius: 10px;
+    border: 1px solid #dee2e6; /* Borde claro */
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+/* Cambia el color de las marcas del acordeón en modo claro */
+[data-bs-theme="light"] .accordion-button::after {
+    filter: brightness(0) invert(1); /* Cambia el color de las flechas a blanco */
+}
+
+/* Estilo personalizado para el acordeón en modo oscuro */
+[data-bs-theme="dark"] .accordion-button {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto claro */
+    border: 1px solid #f8f9fa;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: #495057; /* Color más oscuro para el botón expandido */
+    color: #f8f9fa; /* Texto claro */
+}
+
+[data-bs-theme="dark"] .accordion-body {
+    background-color: #495057; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto claro */
+    border-radius: 10px;
+    border: 1px solid #6c757d; /* Borde oscuro */
+    font-family: 'UTECtxt Roman', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+/* Cambia el color de las marcas del acordeón en modo oscuro */
+[data-bs-theme="dark"] .accordion-button::after {
+    filter: brightness(0) invert(1); /* Cambia el color de las flechas a blanco */
+}
